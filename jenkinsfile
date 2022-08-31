@@ -15,7 +15,7 @@ pipeline{
 
         stage("artifact"){
             steps{
-                sh " archiveArtifacts artifacts: '**/*.war', followSymlinks: false"
+                 archiveArtifacts artifacts: '**/*.war', followSymlinks: false
             }
         }
     }
